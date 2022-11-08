@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <form action="form.jsp">
+        <fieldset>
+            <legend>Informacion personal</legend>
+            <label for="nombre">Nombre: </label><input type="text" name="nombre">
+            <label for="apellidos">Apellidos: </label><input type="text" name="apellidos">
+        </fieldset>
+
+        <fieldset>
+            <legend>Cursos</legend>
+            <label for="pilates">Pilates:</label><input type="checkbox" id="pilates" name="pilates" value="pilates"><br>
+            <label for="yoga">Yoga:</label><input type="checkbox" id="yoga" name="yoga" value="yoga"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Color favorito</legend>
+            <input type="radio" id="rojo" name="fav_color" value="rojo"><label for="rojo">Rojo</label><br>
+            <input type="radio" id="verde" name="fav_color" value="verde"><label for="verde">Verde</label><br>
+            <input type="radio" id="azul" name="fav_color" value="azul"><label for="azul">Azul</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Coches</legend>
+            <label for="cars">Elige un o varios coches:</label><br>
+
+            <select name="cars" id="cars" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+                <option value="seat">Seat</option>
+                <option value="peugeot">Peugeot</option>
+            </select>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Enviar" />
+    </form>
+
+</body>
+
+</html>
